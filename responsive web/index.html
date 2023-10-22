@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsegi Design</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="logo">
+    <h1>TSEGI DESIGN</h1>
+    <h3>COLXN OF ART</h3>
+  </div>
+  <div class="navbar" id="mynavbar">
+    <a href="#">HOME</a>
+    <a href="#">DESIGN</a>
+    <div class="dropdown">
+        <button class="drpdownbtn">TUTORIALS</button>
+        <div class="dropdownlist">
+            <a href="#">Fashion Designing</a>
+            <a href="#">Modeling</a>
+            <a href="#">Apparel</a>
+        </div>
+    </div>
+    <a href="#">CONTACT</a>
+    <a href="#">ABOUT</a>
+    <a href="#" class="ri">SIGNUP</a>
+    <a href="#" class="ri">LOGIN</a>
+    <a href="javascript:void(0);" style="font-size: 15px;"
+    class="icon" onclick="myfunction()">&#9776;</a>
+  </div>
+  <div class="cont">
+    <h1>Learn<br><span>Designing</span></h1>
+    <p class="para">WELCOME<br>Lets Do It Together!<br>
+      All I Know Is Creation Never Stops and DREAMS Come True Whatever It's.
+      <br>Once It Was My Dream.
+    </p>
+    <button class="learn"><a href="#">start now</a></button>
+  </div>
+  <script>
+    function myfunction(){
+      var x = document.getElementById("mynavbar");
+      if(x.className==="navbar"){
+        x.className+="responsive";
+      }
+      else{
+        x.className="navbar";
+      }
+    }
+  </script>
+</body>
+</html>
